@@ -1,0 +1,29 @@
+create the index.html file
+
+npm init -y
+
+npm i -D live-server
+
+npm i -D tailwindcss
+
+"dev" : "live-server / --no-css-inject"
+
+"css" : "tailwindcss -i src/tailwind.css -o dist/main.css"
+
+npx tailwindcss init
+
+purge: ["*.html"],mode : "jit",
+
+theme: {extend: {},fontFamily :{sans:["Fira sans" , "sans-serif"]}},
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+npm run css
+
+"css" : "tailwindcss -i src/tailwind.css -o dist/main.css --watch"
+
+npm run css
+
+<link rel="stylesheet" href="dist/main.css">
